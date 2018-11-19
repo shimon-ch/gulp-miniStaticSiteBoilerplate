@@ -1,6 +1,4 @@
 node_modules/
-source/
-public/
 .vscode/
 .idea/
 .env/

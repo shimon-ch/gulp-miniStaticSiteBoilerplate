@@ -2,8 +2,8 @@
 const defaultTasks = {
   css: 'css',
   js: 'js',
-  image: 'Imagemin',
-  reload: 'reload'
+  image: 'imagemin',
+  reload: 'reload',
 }
 
 export default {

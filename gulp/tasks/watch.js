@@ -12,11 +12,11 @@ class Watch extends Registry {
     gulp.task('watch', () => {
       browserSync.init({
         server: {
-          baseDir: 'public/index.html',
+          baseDir: 'public/',
         },
       })
 
-      gulp.watch('source/scss/**/*.scss', gulp.series(config.defaultTasks.css))
+      gulp.watch('source/sass/**/*.scss', gulp.series(config.defaultTasks.css))
       gulp.watch('source/js/**/*.js', gulp.series(config.defaultTasks.js, config.defaultTasks.reload))
       gulp.watch('source/img/**/*', gulp.series(config.defaultTasks.image))
     })
